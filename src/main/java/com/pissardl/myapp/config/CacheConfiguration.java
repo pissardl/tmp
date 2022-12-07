@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, com.pissardl.myapp.domain.User.class.getName());
             createCache(cm, com.pissardl.myapp.domain.Authority.class.getName());
             createCache(cm, com.pissardl.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.pissardl.myapp.domain.Region.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Country.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Location.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Department.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.pissardl.myapp.domain.Task.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.pissardl.myapp.domain.Employee.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.pissardl.myapp.domain.Job.class.getName());
+            createCache(cm, com.pissardl.myapp.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.pissardl.myapp.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
